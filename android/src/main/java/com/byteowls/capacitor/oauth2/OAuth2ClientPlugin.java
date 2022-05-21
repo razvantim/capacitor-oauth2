@@ -134,7 +134,8 @@ public class OAuth2ClientPlugin extends Plugin {
         this.authService.performTokenRequest(tokenRequest, (response1, ex) -> {
             this.authState.update(response1, ex);
             if (ex != null) {
-                call.reject(ERR_GENERAL, ex);
+                String message = ex.error != null ? ex.error : ERR_GENERAL;
+                call.reject(message, String.valueOf(ex.code), ex);
             } else {
                 if (response1 != null) {
                     try {
