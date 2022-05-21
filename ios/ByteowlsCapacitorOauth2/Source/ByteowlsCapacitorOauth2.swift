@@ -664,7 +664,5 @@ extension OAuth2ClientPlugin: ASAuthorizationControllerDelegate {
             self.savedPluginCall?.reject(self.ERR_GENERAL)
         }
     }
-
-
-
 }
+
