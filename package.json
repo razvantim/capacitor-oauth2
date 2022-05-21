@@ -1,5 +1,5 @@
 {
-    "name": "@justinvartanian/capacitor-oauth2",
+    "name": "@razvantim/capacitor-oauth2",
     "version": "3.0.3",
     "description": "Capacitor OAuth 2 client plugin",
     "author": "Michael Oberwasserlechner",
@@ -22,7 +22,7 @@
         "android/build.gradle",
         "dist/",
         "ios/ByteowlsCapacitorOauth2/Source",
-        "JustinvartanianCapacitorOauth2.podspec"
+        "RazvantimCapacitorOauth2.podspec"
     ],
     "keywords": [
         "capacitor",
