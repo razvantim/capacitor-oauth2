@@ -1,9 +1,9 @@
 {
     "name": "@razvantim/capacitor-oauth2",
-    "version": "3.0.3",
+    "version": "4.0.0",
     "description": "Capacitor OAuth 2 client plugin",
     "author": "Michael Oberwasserlechner",
-    "homepage": "https://github.com/jvartanian/capacitor-oauth2",
+    "homepage": "https://github.com/razvantim/capacitor-oauth2",
     "license": "MIT",
     "main": "dist/esm/index.js",
     "module": "dist/esm/index.js",
@@ -41,22 +41,23 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/moberwasserlechner/capacitor-oauth2"
+        "url": "https://github.com/razvantim/capacitor-oauth2"
     },
     "bugs": {
-        "url": "https://github.com/moberwasserlechner/capacitor-oauth2/issues"
+        "url": "https://github.com/razvantim/capacitor-oauth2/issues"
     },
     "publishConfig": {
-        "access": "public"
+        "access": "public",
+	"registry": "https://npm.pkg.github.com/"
     },
     "peerDependencies": {
-        "@capacitor/core": "^3.0.0"
+        "@capacitor/core": "^4.0.0"
     },
     "dependencies": {},
     "devDependencies": {
-        "@capacitor/android": "3.0.2",
-        "@capacitor/core": "3.0.2",
-        "@capacitor/ios": "3.0.2",
+        "@capacitor/android": "4.0.0",
+        "@capacitor/core": "4.0.0",
+        "@capacitor/ios": "4.0.0",
         "@types/jest": "26.0.24",
         "jest": "27.0.6",
         "ts-jest": "27.0.4",
