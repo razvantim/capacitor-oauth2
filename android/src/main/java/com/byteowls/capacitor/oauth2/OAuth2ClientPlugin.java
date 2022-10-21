@@ -378,7 +378,7 @@ public class OAuth2ClientPlugin extends Plugin {
                         this.authService.performTokenRequest(tokenExchangeRequest, (accessTokenResponse, exception) -> {
                             authState.update(accessTokenResponse, exception);
                             if (exception != null) {
-                                savedCall.reject(ERR_AUTHORIZATION_FAILED, exception);
+                                savedCall.reject(ERR_AUTHORIZATION_FAILED, String.valueOf(exception.code), exception);
                             } else {
                                 if (accessTokenResponse != null) {
                                     if (oauth2Options.isLogsEnabled()) {
